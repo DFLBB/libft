@@ -1,3 +1,3 @@
 # libft
 
-Programming a library in C.
+Programming of a C library for the Campus 42 course.
