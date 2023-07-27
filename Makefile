@@ -38,7 +38,10 @@ SRCS		= 	ft_atoi.c \
 				ft_putnbr_fd.c \
 				ft_lstnew.c \
 				get_next_line.c \
- 				get_next_line_utils.c
+ 				get_next_line_utils.c \
+				ft_printf.c \
+				ft_printstr.c \
+				ft_printnum.c
 
 BONUS_SRCS	=	ft_lstnew.c \
 				ft_lstadd_front.c \
