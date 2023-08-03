@@ -36,11 +36,9 @@ static int	ft_select(char c, va_list args)
 int	ft_printf(char const *str, ...)
 {
 	va_list	args;
-	int		arg;
 	int		c;
 	int		len;
 
-	arg = 0;
 	va_start(args, str);
 	c = 0;
 	len = 0;
