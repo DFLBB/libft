@@ -6,7 +6,7 @@
 /*   By: dlanzas- <dlanzas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 15:35:33 by dlanzas           #+#    #+#             */
-/*   Updated: 2023/07/27 14:48:07 by dlanzas-         ###   ########.fr       */
+/*   Updated: 2023/08/04 11:16:40 by dlanzas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int		ft_print_pointer(unsigned long n);
 int		ft_print_int(int num);
 int		ft_print_uint(unsigned int n);
 int		ft_print_hex(unsigned int dec, char *base);
-int		ft_printf(char const *str, ...)
+int		ft_printf(char const *str, ...);
 void	ft_bzero(void *s, size_t n);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
