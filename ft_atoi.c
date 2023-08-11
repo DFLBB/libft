@@ -47,5 +47,9 @@ int	ft_atoi(const char *str)
 		num = ft_number(str, neg);
 	else
 		return (0);
+	if (num > 2147483648 && neg == -1)
+		(ft_putstr_fd("Error\n", 2), exit(-1));
+	else if (num > 2147483647 && neg == 1)
+		(ft_putstr_fd("Error\n", 2), exit(-1));
 	return (num * neg);
 }
