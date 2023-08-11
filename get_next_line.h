@@ -6,7 +6,7 @@
 /*   By: dlanzas- <dlanzas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/03 16:17:02 by dlanzas           #+#    #+#             */
-/*   Updated: 2023/06/29 09:56:01 by dlanzas-         ###   ########.fr       */
+/*   Updated: 2023/08/11 12:28:53 by dlanzas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,5 @@ char	*gnl_bzero(char *s2, size_t chars);
 char	*gnl_realloc(char **line, size_t size, size_t start);
 char	*gnl_strlcpy(char *dst, const char *src, size_t start, size_t end);
 size_t	gnl_strlen(const char *s);
+
 #endif

@@ -6,7 +6,7 @@
 /*   By: dlanzas- <dlanzas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 15:35:33 by dlanzas           #+#    #+#             */
-/*   Updated: 2023/08/04 11:16:40 by dlanzas-         ###   ########.fr       */
+/*   Updated: 2023/08/11 12:28:36 by dlanzas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,9 @@
 # include <ctype.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include "get_next_line.h"
 # include <stdarg.h>
+# include "get_next_line.h"
 
-#include "../include/push_swap.h"
 int		ft_print_char(int c);
 int		ft_print_str(char *s);
 int		ft_print_pointer(unsigned long n);
@@ -60,7 +59,10 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void	*ft_calloc(size_t count, size_t size);
+char	*ft_strdup(const char *s1);
 char	*get_next_line(int fd);
+
 typedef struct s_list
 {
 	void			*content;
@@ -78,8 +80,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-void	*ft_calloc(size_t count, size_t size);
-
-char	*ft_strdup(const char *s1);
 
 #endif
