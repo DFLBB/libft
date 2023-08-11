@@ -21,9 +21,9 @@ long	ft_number(const char *str, int neg)
 	{
 		num = (num * 10) + (*str - 48);
 		if (num > 2147483648 && neg == -1)
-			return (0);
+			(ft_putstr_fd("Error\n", 2), exit(-1));
 		if (num > 2147483647 && neg == 1)
-			return (-1);
+			(ft_putstr_fd("Error\n", 2), exit(-1));
 		str++;
 	}
 	return (num);
@@ -46,10 +46,6 @@ int	ft_atoi(const char *str)
 	if (*str > 47 && *str < 58)
 		num = ft_number(str, neg);
 	else
-		return (0);
-	if (num > 2147483648 && neg == -1)
-		(ft_putstr_fd("Error\n", 2), exit(-1));
-	else if (num > 2147483647 && neg == 1)
 		(ft_putstr_fd("Error\n", 2), exit(-1));
 	return (num * neg);
 }
